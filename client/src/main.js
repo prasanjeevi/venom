@@ -5,6 +5,10 @@ import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
 
+import Mindmap from 'vue-mindmap'
+import 'vue-mindmap/dist/vue-mindmap.css'
+Vue.use(Mindmap)
+
 Vue.config.productionTip = false
 Vue.use(Vuetify)
 

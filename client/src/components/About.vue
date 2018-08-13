@@ -1,12 +1,20 @@
 <template>
   <div>
     <h2>About</h2>
+    <mindmap
+      :nodes="nodes"
+      :connections="connections"
+      :editable="true"/>
   </div>
 </template>
 
 <script>
-export default {
+import map from './map.js'
 
+export default {
+  data () {
+    return { ...map }
+  }
 }
 </script>
 
